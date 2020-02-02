@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main>
-      <h1>Дизайн-студия «Нёрдс»</h1>
+      <h1 class="visiually-hidden">Дизайн-студия «Нёрдс»</h1>
       <article>
         <div>
           <p>
@@ -46,7 +46,7 @@
         </div>
       </article>
       <section>
-        <h2>Список товаров</h2>
+        <h2 class="visiually-hidden">Список товаров</h2>
         <ul>
           <li>
             <img src="img/illustration-1.jpg" alt="Веб-сайты" />
@@ -75,7 +75,7 @@
         </ul>
       </section>
       <section>
-        <h2>Описание</h2>
+        <h2 class="visiually-hidden">Описание</h2>
         <div>
           <p>
             Мы — маленькая, но гордая<br />
@@ -128,7 +128,7 @@
         </div>
       </section>
       <section>
-        <h2>Сотрудничество</h2>
+        <h2 class="visiually-hidden">Сотрудничество</h2>
         <ul>
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -179,7 +179,25 @@
       </p>
     </footer>
     <aside>
-      <!-- Здесь будет форма -->
+      <h2>Напишите нам</h2>
+      <form action="#" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
+        <label for="email">Ваш e-mail:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+        />
+        <label for="form-text">Текст-письма:</label>
+        <textarea
+          name="form-text"
+          id="form-text"
+          rows="5"
+          placeholder="В свободной форме"
+        ></textarea>
+      </form>
     </aside>
   </body>
 </html>
