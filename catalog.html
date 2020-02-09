@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
@@ -24,7 +24,7 @@
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="сustomers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="catalog-item" href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-basket">
@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <p class="text-style8">Сетка:</p>
+          <p class="filter-title">Сетка:</p>
           <label>
             <input type="radio" name="grid" value="Адаптивная" checked />
             Адаптивная
@@ -68,7 +68,7 @@
           <label>
             <input type="radio" name="grid" value="Резиновая" /> Резиновая
           </label>
-          <p class="text-style8">Особенности:</p>
+          <p class="filter-title">Особенности:</p>
           <input type="checkbox" name="slider" id="slider-field" checked />
           <label for="slider-field">Слайдер</label>
 
@@ -78,18 +78,23 @@
           <input type="checkbox" name="news" id="news-field" checked />
           <label for="news-field">Новости</label>
 
-          <input type="checkbox" name="galery" id="galery-field" />
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            name="galery"
+            id="galery-field"
+          />
           <label for="galery-field">Галерея</label>
 
           <input type="checkbox" name="basket" id="basket-field" />
           <label for="basket-field">Корзина</label>
-          <button type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
         </form>
       </section>
       <section>
         <h2 class="visually-hidden">Список товаров</h2>
         <div>
-          <span class="text-style9">Сортировать:</span>
+          <span class="sort-type">Сортировать:</span>
           <ul class="sort-list">
             <li><a href="#"> По цене</a></li>
             <li><a href="#"> По типу</a></li>
@@ -97,7 +102,7 @@
           </ul>
           <ul class="sort-list">
             <li>
-              <a href="#"
+              <a class="active" href="#"
                 ><img src="img/icon-down-dir.png" alt="По убыванию" />
                 <span>По убыванию</span>
               </a>
@@ -124,7 +129,7 @@
               <p>
                 Информационный сайт для туристов
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
@@ -140,7 +145,7 @@
               <p>
                 Продуктовый лендинг приложения для iOS и Android
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
@@ -156,7 +161,7 @@
               <p>
                 Сайт салона красоты.Для мужчин, да.
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
@@ -172,7 +177,7 @@
               <p>
                 Интернет-магазин вязаных игрушек
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
@@ -188,7 +193,7 @@
               <p>
                 Лендинг курсов повышения квалификации
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
           <li>
@@ -204,15 +209,15 @@
               <p>
                 Промо-сайт производителя крафтового кваса
               </p>
-              <a class="product-price" href="#">9 900 руб.</a>
+              <a class="button product-price" href="#">9 900 руб.</a>
             </div>
           </li>
         </ul>
         <div>
           <a href="#" style="display:none;">Предыдущая</a>
           <ul class="number-list">
-            <li class="number">
-              1
+            <li class="number-active">
+              <span>1</span>
             </li>
             <li class="number">
               <a href="#">2</a>
@@ -221,45 +226,52 @@
               <a href="#">3</a>
             </li>
           </ul>
-          <a class="number" href="#">Следующая</a>
+          <a class="number number-next" href="#">Следующая</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <section>
+      <section class="section-map">
         <img
           src="img/map.jpg"
           alt="карта, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
         />
         <div class="navigation">
-          <p class="text-style2" lang="en">
+          <p class="text--upper" lang="en">
             nёrds desing studio
           </p>
-          <p class="text-style5">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="form-text">
+            191186, Санкт-Петербург, <br />ул. Б. Конюшенная, д. 19/8<br /><br />
+
+            <a class="form-tel" href="tel:+78122757575">
+              тел. +7 (812) 275-75-75
+            </a>
           </p>
-          <a class="text-style5" href="tel:+78122757575">
-            тел. +7 (812) 275-75-75</a
-          >
-          <a class="button button-4" href="#">Напишите нам</a>
+          <a class="button button--min" href="#">Напишите нам</a>
         </div>
       </section>
       <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+        <ul class="social-list">
+          <li>
+            <a class="social-button button-vk" href="#" title="Вконтакте"></a>
+          </li>
+          <li>
+            <a class="social-button button-fb" href="#" title="Фейсбук"></a>
+          </li>
+          <li>
+            <a class="social-button button-in" href="#" title="Инстаграм"></a>
+          </li>
         </ul>
       </div>
-      <p class="text-style6">
+      <p class="footer-slogan">
         Давайте дружить, это выгодно!
       </p>
-      <p class="text-style7">
+      <p class="footer-discount">
         Скидка 10% для друзей из социальных сетей.
       </p>
     </footer>
     <div>
-      <h2 class="text-style">Напишите нам</h2>
+      <h2 class="text--bold">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form class="login-form" action="#" method="post">
         <label for="name">Ваше имя:</label>
@@ -279,7 +291,7 @@
           rows="5"
           placeholder="В свободной форме"
         ></textarea>
-        <button class="button button-5" type="submit">Отправить</button>
+        <button class="button button--large" type="submit">Отправить</button>
       </form>
     </div>
   </body>

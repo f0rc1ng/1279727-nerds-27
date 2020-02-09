@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img
             src="img/index-nerds-logo.svg"
             width="160"
@@ -24,7 +24,9 @@
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="сustomers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-basket">
@@ -59,7 +61,7 @@
             <p>
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a class="button button-1" href="#">Заказать</a>
+            <a class="button button--red" href="#">Заказать</a>
           </li>
           <li class="product-item">
             <img src="img/illustration-2.jpg" alt="Приложения" />
@@ -67,7 +69,7 @@
             <p>
               Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <a class="button button-2" href="#">Заказать</a>
+            <a class="button button--green" href="#">Заказать</a>
           </li>
           <li class="product-item">
             <img src="img/illustration-3.jpg" alt="Презентации" />
@@ -75,32 +77,32 @@
             <p>
               Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <a class="button button-3" href="#">Заказать</a>
+            <a class="button button--yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <section class="description">
         <h2 class="visually-hidden">Описание</h2>
         <div>
-          <p class="text-style">
+          <p class="text--bold">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
           </p>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <p class="text-style2">
+          <p class="text--upper">
             Выполняем заказы на разработку:
           </p>
           <ul class="list-of-examples">
             <li>
-              Веб-сайтов любой сложности
+              <p>Веб-сайтов любой сложности</p>
             </li>
             <li>
-              Мобильных приложений для iOS и Android
+              <p>Мобильных приложений для iOS и Android</p>
             </li>
             <li>
-              Слайдшоу и видео для корпоративных презентаций
+              <p>Слайдшоу и видео для корпоративных презентаций</p>
             </li>
           </ul>
         </div>
@@ -111,21 +113,21 @@
             height="208"
             alt="Цветной логотип «Нёрдс»"
           />
-          <p class="text-style2">
+          <p class="text--upper">
             с 2004 года любим точность во всем:
           </p>
           <ul class="statistics">
             <li>
-              <span class="text-style3">146<sup>%</sup></span>
-              <span class="text-style4">Уровень самоотдачи</span>
+              <span class="statistic-percent">146<sup>%</sup></span>
+              <span class="statistic-title">Уровень самоотдачи</span>
             </li>
             <li>
-              <span class="text-style3">100<sup>%</sup></span>
-              <span class="text-style4">Соблюдение сроков</span>
+              <span class="statistic-percent">100<sup>%</sup></span>
+              <span class="statistic-title">Соблюдение сроков</span>
             </li>
             <li>
-              <span class="text-style3">50<sup>%</sup></span>
-              <span class="text-style4">Минимальная предоплата</span>
+              <span class="statistic-percent">50<sup>%</sup></span>
+              <span class="statistic-title">Минимальная предоплата</span>
             </li>
           </ul>
         </div>
@@ -135,58 +137,67 @@
         <ul class="cooperation-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/htmlacademy-logo.png" alt="html академия" />
+              <img src="img\htmlacdemy-logo-hover.png" alt="html академия" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/borodinski-logo.png" alt="бородинский" />
+              <img src="img/borodinski-logo-hover.png" alt="бородинский" />
             </a>
           </li>
           <li>
-            <a href="#"> <img src="img/pink-logo.png" alt="пинк" /> </a>
+            <a href="#"> <img src="img/pink-logo-hover.png" alt="пинк" /> </a>
           </li>
           <li>
-            <a href="#"> <img src="img/mishka-logo.png" alt="мишка" /> </a>
+            <a href="#">
+              <img src="img/mishka-logo-hover.png" alt="мишка" />
+            </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <section>
+      <section class="section-map">
         <img
           src="img/map.jpg"
           alt="карта, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
         />
         <div class="navigation">
-          <p class="text-style2" lang="en">
+          <p class="text--upper" lang="en">
             nёrds desing studio
           </p>
-          <p class="text-style5">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="form-text">
+            191186, Санкт-Петербург, <br />ул. Б. Конюшенная, д. 19/8<br /><br />
+
+            <a class="form-tel" href="tel:+78122757575">
+              тел. +7 (812) 275-75-75
+            </a>
           </p>
-          <a class="text-style5" href="tel:+78122757575">
-            тел. +7 (812) 275-75-75</a
-          >
-          <a class="button button-4" href="#">Напишите нам</a>
+          <a class="button button--min" href="#">Напишите нам</a>
         </div>
       </section>
       <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+        <ul class="social-list">
+          <li>
+            <a class="social-button button-vk" href="#" title="Вконтакте"></a>
+          </li>
+          <li>
+            <a class="social-button button-fb" href="#" title="Фейсбук"></a>
+          </li>
+          <li>
+            <a class="social-button button-in" href="#" title="Инстаграм"></a>
+          </li>
         </ul>
       </div>
-      <p class="text-style6">
+      <p class="footer-slogan">
         Давайте дружить, это выгодно!
       </p>
-      <p class="text-style7">
+      <p class="footer-discount">
         Скидка 10% для друзей из социальных сетей.
       </p>
     </footer>
     <div>
-      <h2 class="text-style">Напишите нам</h2>
+      <h2 class="text--bold">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form class="login-form" action="#" method="post">
         <label for="name">Ваше имя:</label>
@@ -206,7 +217,7 @@
           rows="5"
           placeholder="В свободной форме"
         ></textarea>
-        <button class="button button-5" type="submit">Отправить</button>
+        <button class="button button--large" type="submit">Отправить</button>
       </form>
     </div>
   </body>
