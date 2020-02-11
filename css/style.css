@@ -89,15 +89,11 @@ a {
   text-align: left;
 }
 
-.feature-item h3 {
+.product-item h3 {
   font-size: 24px;
   line-height: 30px;
-}
-.product-slogan {
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #283136;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .button {
@@ -508,6 +504,12 @@ a {
   opacity: 0.3;
 }
 
+.product-slogan {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #283136;
+}
 /* ползунок */
 
 .range__block {
