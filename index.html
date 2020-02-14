@@ -13,45 +13,101 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img
-            src="img/index-nerds-logo.svg"
-            width="160"
-            height="65"
-            alt="Логотип дизайн-студии «Нёрдс»"
-          />
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="сustomers.html">Клиенты</a></li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-basket">
-          <li>
-            <a class="basket-link" href="#">
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img
+              src="img/index-nerds-logo.svg"
+              width="160"
+              height="65"
+              alt="Логотип дизайн-студии «Нёрдс»"
+            />
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation_item">
+              <a href="studio.html">Студия</a>
+            </li>
+            <li class="site-navigation_item">
+              <a href="сustomers.html">Клиенты</a>
+            </li>
+            <li class="site-navigation_item">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="site-navigation_item">
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-basket">
+            <li>
+              <a class="basket-link" href="#">
+                <span>Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-      <article>
-        <div>
-          <p>
-            Долго, дорого, скрупулезно.
-          </p>
-          <p>
-            Математически выверенный дизайн для вашего сайта или мобильного
-            приложения.
-          </p>
-          <a href="#">Узнать больше</a>
+      <section class="index-slider">
+        <div class="wrapper">
+          <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+          <ul class="slider-list">
+            <li class="index-slider_item">
+              <div class="index-slider_content">
+                <p class="slide-title">Долго, дорого, скрупулезно.</p>
+                <p class="slide-subtext">
+                  Математически выверенный дизайн <br />
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <a class="button slider-button" href="#">Узнать больше</a>
+              </div>
+              <img
+                class="index-slider_img"
+                src="img\slide-picture.png"
+                alt="три мобильных телефона"
+              />
+            </li>
+            <li class="index-slider_item">
+              <div class="index-slider_content">
+                <p class="slide-title">Любим математику как никто другой</p>
+                <p class="slide-subtext">
+                  Никакого креатива, только математические формулы для расчета
+                  идеальных пропорций.
+                </p>
+                <a class="button slider-button" href="#">Узнать больше</a>
+              </div>
+              <img
+                class="index-slider_img"
+                src="img\slide-picture2.png"
+                alt="два компьютера"
+              />
+            </li>
+            <li class="index-slider_item">
+              <div class="index-slider_content">
+                <p class="slide-title">Только ночь, только хардкор</p>
+                <p class="slide-subtext">
+                  Работать днем, как все? Мы против этого. Ближе к полуночи
+                  работа только начинается.
+                </p>
+                <a class="button slider-button" href="#">Узнать больше</a>
+              </div>
+              <img
+                class="index-slider_img"
+                src="img\slide-picture3.png"
+                alt="планшет и мобильный телефон"
+              />
+            </li>
+          </ul>
         </div>
-      </article>
+      </section>
+      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
       <section class="product">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="product-list">
