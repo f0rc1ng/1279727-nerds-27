@@ -364,6 +364,8 @@ a {
 
 .backmarket {
   background-color: #eeeeee;
+  text-align: center;
+  padding: 80px 0px 116px;
 }
 
 .market {
@@ -617,7 +619,21 @@ a {
 .slider-button {
   padding: 17px 56px 15px 53px;
 }
+
+.slider-button:hover,
+.slider-button:focus,
+.button--min:hover,
+.button--min:focus  {
+  background-color: #e74246;
 }
+
+.slider-button:active,
+.button--min:focus {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  }
+
 /* ползунок */
 
 .range__block {
@@ -627,6 +643,7 @@ a {
 
 .range__first {
   background: grey;
+  
   width: 200px;
   height: 3px;
 }
@@ -637,23 +654,23 @@ a {
   height: 3px;
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 50px
 }
 
 .prev,
 .next {
   background: purple;
-  border: none;
+  border:none;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
+  top:-5px;
 }
 
 .prev:before,
 .next:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 3px;
   height: 3px;
@@ -661,7 +678,7 @@ a {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
 .prev {
   left: 142px;
