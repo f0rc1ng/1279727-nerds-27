@@ -501,7 +501,7 @@ a {
 
 .section-map .navigation {
   position: absolute;
-  top: 0px;
+  top: 60px;
   left: 0px;
 
   background-color: #ffffff;
@@ -913,10 +913,10 @@ sup {
 .section-map .wrapper {
   overflow: visible;
   position: absolute;
-  top: 54px;
+  top: -5px;
   left: 0;
   right: 0;
-  height: 85%;
+  height: 0%;
   padding: 0;
 }
 
