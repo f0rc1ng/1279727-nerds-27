@@ -1,4 +1,4 @@
-var link = document.querySelector(".button--min");
+var link = document.querySelector(".button--small");
 
 var popup = document.querySelector(".contact-popup");
 var close = popup.querySelector(".modal-close");
