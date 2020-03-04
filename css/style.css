@@ -689,6 +689,10 @@ a {
   margin-bottom: 37px;
 }
 
+.index-slider_item2 .slide-subtext {
+  padding-right: 150px;
+}
+
 .slider-list {
   list-style: none;
   display: flex;
@@ -1125,19 +1129,19 @@ a {
 }
 
 .contact-popup input[type="text"]::placeholder,
-textarea::placeholder {
+.contact-popup textarea::placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
 
 .contact-popup input[type="text"]:focus::placeholder,
-textarea:focus::placeholder {
+.contact-popup textarea:focus::placeholder {
   color: #444;
 }
 
 .contact-popup input[type="text"]:focus,
 .contact-popup input[type="text"]:active,
-textarea:focus,
-textarea:active {
+.contact-popup textarea:focus,
+.contact-popup textarea:active {
   outline: none;
 }
 
@@ -1147,7 +1151,7 @@ textarea:hover {
 }
 
 .contact-popup input[type="text"]:focus,
-textarea:focus {
+.contact-popup textarea:focus {
   border: 2px solid #000;
 }
 
@@ -1472,7 +1476,7 @@ textarea:focus {
   margin-bottom: 44px;
 }
 
-textarea {
+.login-form-itemarea textarea {
   resize: none;
 }
 
